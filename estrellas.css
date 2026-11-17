@@ -1,0 +1,100 @@
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #050510;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+h1{
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0 20px;
+
+}
+h1 span{
+    color: #ffd700;
+}
+p.sub{
+    opacity: 7;
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 0 30px;
+}
+.sky{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+}
+.star{
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: brilla 2s infinite alternate;
+    box-shadow: 0 0 10px white;
+}
+@keyframes brilla{from{opacity: 4;
+    transform:scale(.8);}
+    to{opacity: 1; transform: scale(1.2);}
+}
+.big-star{
+    width: 70px; 
+    height: 70px; 
+    background: #ffd700; 
+    box-shadow: 0 0 30px #ffd700, 0 0 60px #ffd700; 
+    border-radius: 50%; 
+    position: absolute; 
+    left: 50%; 
+    bottom: 5%; 
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    animation: brilla 1.5s infinite alternate;
+ }
+ #carta{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .85);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
+ }
+ #carta.mostrar{
+    display: flex;
+ }
+ .papel{
+    background: #fff8e7;
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 300px;
+    line-height: 1.6;
+    font-size: 10px;
+
+ }
+ .papel h2{
+    color: #b8860b;
+    margin-bottom: 10px;
+ }
+ button{
+    margin-top: 15px;
+    background: #050510;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+ }

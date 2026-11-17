@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>para ti</title>
+    <link rel="stylesheet" href="estrellas.css">
+   
+</head>
+<body>
+    <h1>Si nuestros chats fueran
+        <span>estrellas</span>...</h1>
+
+    <p class="sub">Hice esto para ti, pícale a cada estrellita ojo piojo ✨ </p>
+
+    <div class="sky" id="sky">✨</div>
+    
+
+    <div class="big-star" onclick="abrir(5)">✨</div>
+
+    <p style="font-size:15px; opacity: 8; "> Esta es la más brillante,déjala al final</p><break></break>
+
+    <div id="carta" onclick="cerrar()">
+        <div class="papel" onclick="event.stopPropagation()">
+            <h2 id="titulo"></h2>
+            <p id="texto"></p>
+            <button onclick="cerrar()">me gusto</button>
+        </div>
+    </div>
+
+     <script src="estrellas.js"></script>
+</body>
+</html>
